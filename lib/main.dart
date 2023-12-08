@@ -24,13 +24,15 @@ class MyApp extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           title: 'Move Mate',
           theme: ThemeData(
+            fontFamily: 'HankenGrotesk',
             useMaterial3: true,
             scaffoldBackgroundColor: AppColors.background,
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
           initialRoute: RouteKeys.home,
-          home: child,onGenerateRoute: generateRoute,
+          home: child,
+          onGenerateRoute: generateRoute,
         );
       },
     );
